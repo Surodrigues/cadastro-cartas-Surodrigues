@@ -13,8 +13,10 @@ int main(){
     char codigo1[3], codigo2[3]; //precisa de 3 caracteres para poder armazenar o /0 que informa o fim da string;
     char cidade1[50], cidade2[50];
     int populacao1, populacao2, pontos1, pontos2;
-    float area1, area2, pib1, pib2;
+    float area1, area2, pib1, pib2, densidade1, densidade2, percapita1, percapita2;
     
+    printf("####### Programa Super Trunfo #######\n");
+    printf("\n");
     //dados da primeira carta:
     printf("Insira os dados da carta 1:\nDigite uma letra de 'A' a 'H' para representar o estado: ");
     scanf(" %c", &estado1); //espaço antes da leitura do input para não armazenar o enter do input anterior
@@ -48,6 +50,12 @@ int main(){
     printf("Digite a quantidade de pontos turísticos na cidade: ");
     scanf("%d", &pontos2);
 
+    //calculo da densidade e pib per capita:
+    densidade1 = populacao1/area1;
+    percapita1 = pib1/populacao1;
+    densidade2 = populacao2/area2;
+    percapita2 = pib2/populacao2;
+
     //impressão dos dados:
     printf(".\n");
     printf(".\n");
@@ -61,6 +69,8 @@ int main(){
     printf("Área: %.2f Km²\n", area1); //o formatador .2 indica 2 casas decimais após a vírgula;
     printf("PIB: %.2f bilhões de reais\n", pib1);
     printf("Número de pontos turísticos: %d\n", pontos1);
+    printf("Densidade Populacional: %.2f hab/km²\n", densidade1);
+    printf("PIB per Capita: %.2f reais\n", percapita1);
     printf("============================\n");
     printf("\n");
     printf("============================\n");
@@ -72,6 +82,8 @@ int main(){
     printf("Área: %.2f Km²\n", area2); //o formatador .2 indica 2 casas decimais após a vírgula;
     printf("PIB: %.2f bilhões de reais\n", pib2);
     printf("Número de pontos turísticos: %d\n", pontos2);
+    printf("Densidade Populacional: %.2f hab/km²\n", densidade2);
+    printf("PIB per Capita: %.2f reais\n", percapita2);
     printf("============================\n");
     printf("\n");
     printf("         FIM\n");
