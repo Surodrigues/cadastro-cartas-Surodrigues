@@ -108,17 +108,24 @@ int main(){
     printf(".\n");
     printf(".\n");
     printf("\n");
-    printf("### COMPARAÇÃO DAS CARTAS: ###\n");
+    // printf("### COMPARAÇÃO DAS CARTAS: ###\n");
+    // printf("\n");
+    // printf("Resposta 1 = VERDADEIRO; RESPOSTA 0 = FALSO\n");
+    // printf("\n");
+    // printf("População: A carta %c%s ganha da carta %c%s? == %d\n", estado1, codigo1, estado2, codigo2, resultpopulacao);
+    // printf("Área: A carta %c%s ganha da carta %c%s? == %d\n", estado1, codigo1, estado2, codigo2, resultarea);
+    // printf("PIB: A carta %c%s ganha da carta %c%s? == %d\n", estado1, codigo1, estado2, codigo2, resultpib);
+    // printf("Pontos Turísticos: A carta %c%s ganha da carta %c%s? == %d\n", estado1, codigo1, estado2, codigo2, resultpontos);
+    // printf("Densidade Populacional: A carta %c%s ganha da carta %c%s? == %d\n", estado1, codigo1, estado2, codigo2, resultdensidade);
+    // printf("PIB per capita: A carta %c%s ganha da carta %c%s? == %d\n", estado1, codigo1, estado2, codigo2, resultpercapita);
+    // printf("Super Poder: A carta %c%s ganha da carta %c%s? == %d\n", estado1, codigo1, estado2, codigo2, resultsuperpoder);
+    printf("##### DESAFIO ::POPULAÇÃO:: ######");
     printf("\n");
-    printf("Resposta 1 = VERDADEIRO; RESPOSTA 0 = FALSO\n");
-    printf("\n");
-    printf("População: A carta %c%s ganha da carta %c%s? == %d\n", estado1, codigo1, estado2, codigo2, resultpopulacao);
-    printf("Área: A carta %c%s ganha da carta %c%s? == %d\n", estado1, codigo1, estado2, codigo2, resultarea);
-    printf("PIB: A carta %c%s ganha da carta %c%s? == %d\n", estado1, codigo1, estado2, codigo2, resultpib);
-    printf("Pontos Turísticos: A carta %c%s ganha da carta %c%s? == %d\n", estado1, codigo1, estado2, codigo2, resultpontos);
-    printf("Densidade Populacional: A carta %c%s ganha da carta %c%s? == %d\n", estado1, codigo1, estado2, codigo2, resultdensidade);
-    printf("PIB per capita: A carta %c%s ganha da carta %c%s? == %d\n", estado1, codigo1, estado2, codigo2, resultpercapita);
-    printf("Super Poder: A carta %c%s ganha da carta %c%s? == %d\n", estado1, codigo1, estado2, codigo2, resultsuperpoder);
+    if(populacao1>populacao2){
+      printf("A carta %c%s ganhou!!\n", estado1, codigo1);
+    } else {
+      printf("A carta %c%s ganhou!!\n", estado2, codigo2);
+    }
     printf("\n");
     printf(".\n");
     printf(".\n");
